@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Comic Sans MS', sans-serif;
+}
+
+body {
+    text-align: center;
+}
+
+@-webkit-keyframes fade {
+    0% { opacity: 0; }
+    20% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes fade {
+    0% { opacity: 0; }
+    20% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+canvas {
+    border: 1px solid #888;
+    display: block;
+    margin: auto;
+    margin-bottom: 1em;
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    padding: 1em;
+    background-color: #888;
+    transition: background-color 0.1s;
+    -webkit-transition: background-color 0.1s;
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 1em;
+}
+
+a:active {
+    background-color: #aaa;
+}
+
+input[type="text"] {
+    margin-bottom: 1em;
+}
